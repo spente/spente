@@ -1,0 +1,62 @@
+:host {
+  display: flex;
+  flex-direction: column;
+  height: 100%;
+  width: 100%;
+
+  header {
+    background: #2278F0;
+    height: 80px;
+    width: 100%;
+    position: relative;
+  }
+
+  .menu {
+    position: absolute;
+    font-size: 30px;
+    display: flex;
+    color: #fff;
+    top: 0;
+    margin: 20px;
+    &.left {
+      left: 0;
+    }
+    &.right {
+      right: 0;
+    }
+    & > :last-child {
+      margin-left: 20px;
+    }
+  }
+  .center-tabs {
+    left: 0;
+    right: 0;
+    width: 300px;
+    margin: 18px auto auto;
+
+    display: flex;
+    .tab {
+      display: flex;
+      flex: 1;
+      height: 40px;
+      color: #fff;
+      border: 1px solid #fff;
+      text-align: center;
+      align-items: center;
+      justify-content: center;
+
+      &.active {
+        background: #fff;
+        color: #2278F0;
+      }
+      &:first-child {
+        border-top-left-radius: 5px;
+        border-bottom-left-radius: 5px;
+      }
+      &:last-child {
+        border-top-right-radius: 5px;
+        border-bottom-right-radius: 5px;
+      }
+    }
+  }
+}

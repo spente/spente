@@ -1,0 +1,109 @@
+@import './../../../mixins';
+
+:host {
+  background: #EEEEEE;
+  display: flex;
+  flex: 1;
+  flex-direction: column;
+  height: 100%;
+
+  .action-line {
+    max-height: 80px;
+    background: #F9F9F9;
+    width: 100%;
+    flex: 1;
+    color: #F0F0F0;
+    display: flex;
+
+    .currency {
+      font-size: 60px;
+      width: 100px;
+      border-right: 2px solid;
+      height: 100%;
+      align-items: center;
+      display: flex;
+      justify-content: center;
+    }
+
+    .input-value {
+      border-right: 2px solid;
+      padding-left: 20px;
+      padding-right: 20px;
+      input {
+        text-align: right;
+        margin-top: 10px;
+        width: 200px;
+        font-size: 40px;
+        border: none;
+        background: transparent;
+        border-bottom: 4px solid;
+        padding-bottom: 5px;
+        color: #EEEEEE;
+        @include placeholder {
+          color: #F0F0F0;
+        }
+      }
+    }
+    .description {
+      border-right: 2px solid;
+      padding-left: 20px;
+      padding-right: 20px;
+      width: 100%;
+      input {
+        text-align: right;
+        margin-top: 10px;
+        width: 100%;
+        font-size: 40px;
+        border: none;
+        background: transparent;
+        border-bottom: 4px solid;
+        padding-bottom: 5px;
+        color: #EEEEEE;
+        @include placeholder {
+          color: #F0F0F0;
+        }
+      }
+    }
+  }
+
+  .items {
+    flex: 1;
+    position: relative;
+    display: flex;
+    flex-wrap: wrap;
+    align-content: space-between;
+    justify-content: space-between;
+    height: 100%;
+    margin: 20px auto 140px;
+    max-width: 900px;
+    max-height: 420px;
+
+    .item {
+      width: 160px;
+      height: 200px;
+      border-radius: 10px;
+      background: #fff;
+
+      &.active {
+        border: 4px solid #FDD835;
+      }
+    }
+  }
+
+  .add-btn {
+    color: #fff;
+    text-align: center;
+    bottom: 0;
+    position: absolute;
+    left: 0;
+    right: 0;
+    width: 200px;
+    margin: 20px auto;
+    font-weight: bold;
+    background: #2278F0 linear-gradient(-269deg, #2DABFD 0%, #1473FB 100%);
+    letter-spacing: 1px;
+    font-size: 20px;
+    padding: 18px 50px;
+    border-radius: 30px;
+  }
+}
