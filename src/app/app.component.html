@@ -1,3 +1,30 @@
-<h1>
-  {{title}}
-</h1>
+<md-sidenav-layout>
+
+    <md-sidenav #start [opened]="open">
+        <div class="profile">
+            <img src="https://avatars2.githubusercontent.com/u/2823336?v=3&s=460" alt="" class="avatar">
+            Denis Artyuhovich
+        </div>
+        <div class="menu-items">
+            <a href="#">Income</a>
+            <a href="#">Expenses</a>
+            <a href="#">Statistics</a>
+            <a href="#">Log out</a>
+        </div>
+    </md-sidenav>
+    <header>
+        <div class="left menu">
+            <div class="ion-person" (click)="open = !open"></div>
+            <div class="ion-ios-list-outline"></div>
+        </div>
+        <div class="center-tabs">
+            <div class="tab">Expenses</div>
+            <div class="tab active">Income</div>
+        </div>
+        <div class="right menu">
+            <div class="ion-ios-pie-outline"></div>
+        </div>
+    </header>
+
+    <router-outlet></router-outlet>
+</md-sidenav-layout>
