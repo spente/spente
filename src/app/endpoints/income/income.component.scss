@@ -15,54 +15,37 @@
     color: #F0F0F0;
     display: flex;
 
-    .currency {
-      font-size: 60px;
-      width: 100px;
-      border-right: 2px solid;
-      height: 100%;
+    > div {
       align-items: center;
       display: flex;
       justify-content: center;
+      flex: 1;
+      color: #9E9E9E;
+    }
+
+    md-input {
+      font-size: 25px;
+      width: 100%;
+    }
+
+    .currency {
+      font-size: 60px;
+      max-width: 100px;
+      border-right: 2px solid #F0F0F0;
+      height: 100%;
     }
 
     .input-value {
-      border-right: 2px solid;
+      border-right: 2px solid #F0F0F0;
       padding-left: 20px;
       padding-right: 20px;
-      input {
-        text-align: right;
-        margin-top: 10px;
-        width: 200px;
-        font-size: 40px;
-        border: none;
-        background: transparent;
-        border-bottom: 4px solid;
-        padding-bottom: 5px;
-        color: #EEEEEE;
-        @include placeholder {
-          color: #F0F0F0;
-        }
-      }
+      max-width: 300px;
     }
     .description {
-      border-right: 2px solid;
+      border-right: 2px solid  #F0F0F0;;
       padding-left: 20px;
       padding-right: 20px;
       width: 100%;
-      input {
-        text-align: right;
-        margin-top: 10px;
-        width: 100%;
-        font-size: 40px;
-        border: none;
-        background: transparent;
-        border-bottom: 4px solid;
-        padding-bottom: 5px;
-        color: #EEEEEE;
-        @include placeholder {
-          color: #F0F0F0;
-        }
-      }
     }
   }
 
@@ -77,6 +60,7 @@
     margin: 20px auto 140px;
     max-width: 900px;
     max-height: 420px;
+    overflow-y: scroll;
 
     .item {
       width: 160px;
