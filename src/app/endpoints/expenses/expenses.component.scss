@@ -4,6 +4,7 @@
   flex: 1;
   flex-direction: column;
   height: 100%;
+  overflow: auto;
 
   .action-line {
     max-height: 80px;
@@ -55,10 +56,9 @@
     align-content: space-between;
     justify-content: space-between;
     height: 100%;
-    margin: 20px auto 140px;
+    margin: 20px auto;
     max-width: 900px;
     max-height: 420px;
-    overflow-y: scroll;
 
     .item {
       width: 160px;
