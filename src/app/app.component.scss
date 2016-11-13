@@ -7,12 +7,16 @@
   .ion-ios-pie:before {
     content: "\f484";
   }
+  .ion-ios-list:before {
+    content: "\f454";
+  }
 
   header {
     background: #2278F0;
     height: 80px;
     width: 100%;
     position: relative;
+    min-height: 80px;
   }
 
   .menu {
@@ -22,6 +26,10 @@
     color: #fff;
     top: 0;
     margin: 20px;
+    >*{
+      margin-top: -5px;
+      padding: 5px;
+    }
     &.left {
       left: 0;
     }
