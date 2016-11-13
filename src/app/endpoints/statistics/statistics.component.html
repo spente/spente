@@ -1,39 +1,49 @@
-<div class="charts">
-    <div class="total">
-        <div class="spent">
-            <div class="title">Expenses</div>
-            <div class="value">1242 <span class="ion-social-euro"></span></div>
-        </div>
-        <div class="income">
-            <div class="title">Income</div>
-            <div class="value">4500 <span class="ion-social-euro"></span></div>
-        </div>
-    </div>
-    <div class="total-chart">
-        <div class="canvas-wrapper">
-            <canvas baseChart
-                    [data]="doughnutChartData"
-                    [labels]="doughnutChartLabels"
-                    [chartType]="doughnutChartType"
-                    (chartHover)="chartHovered($event)"
-                    (chartClick)="chartClicked($event)">
-            </canvas>
-        </div>
+<div class="select-date-range">
+    <div class="btn-group">
+    <div class="btn active">Day</div>
+    <div class="btn">Weekly</div>
+    <div class="btn">Month</div>
+    <div class="btn">Range</div>
     </div>
 </div>
-<div class="statistics">
-    <div class="items">
-        <div class="item">
-        <div class="title">Supermarket</div>
-            <img src="./../../../assets/icons/basket.svg" alt="" class="icon">
-            <div class="sum">550  <span class="ion-social-euro"></span></div>
+<div class="content">
+    <div class="charts">
+        <div class="total">
+            <div class="spent">
+                <div class="title">Expenses</div>
+                <div class="value">1242 <span class="ion-social-euro"></span></div>
+            </div>
+            <div class="income">
+                <div class="title">Income</div>
+                <div class="value">4500 <span class="ion-social-euro"></span></div>
+            </div>
         </div>
-        <div class="item"></div>
-        <div class="item"></div>
-        <div class="item"></div>
-        <div class="item"></div>
-        <div class="item"></div>
-        <div class="item"></div>
-        <div class="item"></div>
+        <div class="total-chart">
+            <div class="canvas-wrapper">
+                <canvas baseChart
+                        [data]="doughnutChartData"
+                        [labels]="doughnutChartLabels"
+                        [chartType]="doughnutChartType"
+                        (chartHover)="chartHovered($event)"
+                        (chartClick)="chartClicked($event)">
+                </canvas>
+            </div>
+        </div>
+    </div>
+    <div class="statistics">
+        <div class="items">
+            <div class="item">
+                <div class="title">Supermarket</div>
+                <img src="./../../../assets/icons/basket.svg" alt="" class="icon">
+                <div class="sum">550 <span class="ion-social-euro"></span></div>
+            </div>
+            <div class="item"></div>
+            <div class="item"></div>
+            <div class="item"></div>
+            <div class="item"></div>
+            <div class="item"></div>
+            <div class="item"></div>
+            <div class="item"></div>
+        </div>
     </div>
 </div>
