@@ -7,7 +7,7 @@ import { Component, OnInit } from '@angular/core';
 })
 export class TodoComponent implements OnInit {
 
-  listOne:Array<string> = ['Coffee','Orange Juice','Red Wine','Unhealty drink!','Water'];
+  listOne:Array<string> = ['Coffee','Orange Juice'];
 
   constructor() { }
 
