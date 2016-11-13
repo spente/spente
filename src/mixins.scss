@@ -4,3 +4,11 @@
   &::-moz-placeholder          {@content}
   &:-ms-input-placeholder      {@content}
 }
+
+.clearfix {
+  &:after {
+    content: "";
+    display: table;
+    clear: both;
+  }
+}

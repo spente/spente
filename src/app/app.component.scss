@@ -4,6 +4,10 @@
   height: 100%;
   width: 100%;
 
+  .ion-ios-pie:before {
+    content: "\f484";
+  }
+
   header {
     background: #2278F0;
     height: 80px;
