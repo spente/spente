@@ -10,12 +10,15 @@ import {IncomeComponent} from './endpoints/income/income.component';
 import {routes} from './app.routes'
 import {RouterModule} from "@angular/router";
 import {StatisticsComponent} from './endpoints/statistics/statistics.component';
+import {TodoComponent} from './endpoints/todo/todo.component';
+import {DndModule} from 'ng2-dnd';
 
 @NgModule({
     declarations: [
         AppComponent,
         IncomeComponent,
-        StatisticsComponent
+        StatisticsComponent,
+        TodoComponent
     ],
     imports: [
         BrowserModule,
@@ -23,6 +26,7 @@ import {StatisticsComponent} from './endpoints/statistics/statistics.component';
         HttpModule,
         RouterModule.forRoot(routes),
         MaterialModule.forRoot(),
+        DndModule.forRoot(),
         ChartsModule
     ],
     providers: [],

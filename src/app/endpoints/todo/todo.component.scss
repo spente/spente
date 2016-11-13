@@ -1,0 +1,51 @@
+:host {
+  background: #EEEEEE;
+  display: flex;
+  height: 100%;
+  overflow: auto;
+
+  .todos {
+    padding: 20px;
+    width: auto;
+    white-space: nowrap;
+
+    .todo {
+      width: 300px;
+      min-height: 400px;
+      display: inline-block;
+      margin-right: 20px;
+      border-radius: 5px;
+      overflow: hidden;
+      background: #fff;
+      box-shadow: 0 0 5px 0 rgba(0, 0, 0, 0.15);
+      vertical-align:top;
+
+      &:last-child {
+        margin-right: 0;
+      }
+
+      .header {
+        color: #fff;
+        padding: 10px;
+        background: #2278F0;
+      }
+    }
+  }
+  .add-todo-list {
+    background: #F66E98;
+    box-shadow: 0px 15px 25px 0px rgba(0, 0, 0, 0.15);
+    border-radius: 100px;
+    position: absolute;
+    bottom: 25px;
+    right: 25px;
+    height: 80px;
+    width: 80px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    img {
+      width: 40px;
+      height: 40px;
+    }
+  }
+}
