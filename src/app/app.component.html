@@ -19,10 +19,10 @@
         </div>
         <div class="center-tabs">
             <div class="tab">Expenses</div>
-            <div class="tab active">Income</div>
+            <div class="tab"  [routerLink]="['income']" routerLinkActive="active">Income</div>
         </div>
         <div class="right menu">
-            <div class="ion-ios-pie-outline"></div>
+            <div class="ion-ios-pie-outline" [routerLink]="['statistics']" routerLinkActive="ion-ios-pie"></div>
         </div>
     </header>
 
