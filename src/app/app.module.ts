@@ -12,13 +12,15 @@ import {RouterModule} from "@angular/router";
 import {StatisticsComponent} from './endpoints/statistics/statistics.component';
 import {TodoComponent} from './endpoints/todo/todo.component';
 import {DndModule} from 'ng2-dnd';
+import { ExpensesComponent } from './endpoints/expenses/expenses.component';
 
 @NgModule({
     declarations: [
         AppComponent,
         IncomeComponent,
         StatisticsComponent,
-        TodoComponent
+        TodoComponent,
+        ExpensesComponent
     ],
     imports: [
         BrowserModule,

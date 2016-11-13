@@ -3,10 +3,10 @@
          *ngFor="let item of listOne; let i = index;"
          dnd-sortable
          [sortableIndex]="i">
-        <div class="header">For tomorrow {{item}}</div>
+        <div class="header">List: {{item}}</div>
     </div>
 </div>
 
 <div class="add-todo-list">
-    <img src="./../../../assets/icons/plus.svg" alt="Add">
+    <img src="./../../../assets/icons/plus.svg" alt="Add" (click)="listOne.push('general')">
 </div>
